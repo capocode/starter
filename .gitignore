@@ -1,0 +1,9 @@
+vendor
+
+# App
+.cache
+public
+
+# Editors
+.vscode
+.idea

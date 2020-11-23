@@ -1,0 +1,13 @@
+{
+  "require": {
+    "antlur/phatsby": "@dev"
+  },
+  "scripts": {
+      "build": "./vendor/bin/artisan phatsby:build"
+  },
+  "autoload": {
+    "psr-4": {
+      "Site\\": "src/"
+    }
+  }
+}
