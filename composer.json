@@ -1,5 +1,5 @@
 {
-  "name": "Phatsby Starter",
+  "name": "antlur/phatsby-starter",
   "require": {
     "antlur/phatsby": "dev-main"
   },
