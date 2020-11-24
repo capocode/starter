@@ -1,4 +1,5 @@
 {
+  "name": "Phatsby Starter",
   "require": {
     "antlur/phatsby": "dev-main"
   },
