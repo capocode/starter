@@ -1,9 +1,9 @@
 {
   "require": {
-    "antlur/phatsby": "@dev"
+    "antlur/phatsby": "dev-main"
   },
   "scripts": {
-      "build": "./vendor/bin/artisan phatsby:build"
+    "build": "./vendor/bin/phatsby phatsby:build"
   },
   "autoload": {
     "psr-4": {
