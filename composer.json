@@ -4,7 +4,13 @@
     "antlur/phatsby": "dev-main"
   },
   "scripts": {
-    "build": "./vendor/bin/phatsby phatsby:build"
+    "build": "./vendor/bin/phatsby phatsby:build",
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php phatsby key:generate --ansi"
+    ]
   },
   "autoload": {
     "psr-4": {
