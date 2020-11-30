@@ -12,6 +12,8 @@
       "@php phatsby key:generate --ansi"
     ]
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "autoload": {
     "psr-4": {
       "Site\\": "src/"
