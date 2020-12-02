@@ -1,7 +1,7 @@
 {
   "name": "antlur/phatsby-starter",
   "require": {
-    "antlur/phatsby": "dev-main"
+    "antlur/phatsby": "^0.0.1"
   },
   "scripts": {
     "build": "./vendor/bin/phatsby build",
