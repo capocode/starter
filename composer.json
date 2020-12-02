@@ -9,7 +9,7 @@
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
     "post-create-project-cmd": [
-      "@php phatsby key:generate --ansi"
+      "@php vendor/bin/phatsby key:generate --ansi"
     ]
   },
   "minimum-stability": "dev",
