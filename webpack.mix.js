@@ -1,5 +1,4 @@
 const mix = require("laravel-mix");
-require('laravel-mix-versionhash');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,12 +10,13 @@ require('laravel-mix-versionhash');
  | file for the application as well as bundling up all the JS files.
  |
  */
-// mix.js('src/js/app.js', 'public/js')
+
 mix
+  .setPublicPath('public')
   .postCss(
-    "src/styles/app.css",
+    "src/resources/css/app.css",
     "public/css",
     require("./postcss.config").plugins
   )
-  .setPublicPath('public')
-  .versionHash();
+  .js('src/resources/js/app.js', 'public/js')
+  .version()
