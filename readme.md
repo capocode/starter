@@ -8,7 +8,7 @@ composer create-project antlur/phatsby-starter -s dev
 
 npm i
 
-npm run build
+composer run build
 ```
 
 ## Routing
