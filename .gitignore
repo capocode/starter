@@ -2,10 +2,15 @@ vendor
 
 # App
 .cache
-public
+out
 
 # Editors
 .vscode
 .idea
 node_modules
 .env
+
+# Assets
+public/css/app.js
+public/js/app.js
+public/mix-manifest.json
