@@ -3,11 +3,15 @@
 This is under heavy construction and might change at any time. Heavily inspired by Gatsby and Next.
 
 ## Getting Started
-```
+
+```bash
 composer create-project antlur/phatsby-starter -s dev
 
 npm i
 
+npm run dev
+
+// to build the site
 composer run build
 ```
 
