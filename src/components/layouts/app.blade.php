@@ -7,8 +7,8 @@
         <title></title>
         <meta name="description" content="">
     @show
-    <link rel="stylesheet" href="{{ manifest('app.css') }}">
-    <script src="{{ manifest('app.js')}}" defer></script>
+    <link rel="stylesheet" href="{{ mix('/_assets/app.css') }}">
+    <script src="{{ mix('/_assets/app.js')}}" defer></script>
 </head>
 <body>
     {{ $slot }}
