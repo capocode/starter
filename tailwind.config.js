@@ -1,9 +1,9 @@
 module.exports = {
   purge: [
-    './src/components/**/*.php',
-    './src/pages/**/*.php'
+    "./src/components/**/*.php",
+    "./src/pages/**/*.php",
   ],
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {},
   },
@@ -11,4 +11,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
