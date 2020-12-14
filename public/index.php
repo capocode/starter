@@ -29,7 +29,7 @@ require __DIR__ . '/../vendor/autoload.php';
 |
 */
 
-$app = require_once __DIR__ . '/../vendor/antlur/phatsby/bootstrap/app.php';
+$app = require_once __DIR__ . '/../vendor/antlur/capo/bootstrap/app.php';
 
 $app->useEnvironmentPath(realpath('../'));
 
