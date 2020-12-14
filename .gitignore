@@ -3,6 +3,7 @@ vendor
 # App
 .cache
 out
+dist
 
 # Editors
 .vscode
@@ -14,3 +15,4 @@ node_modules
 public/css/app.css
 public/js/app.js
 public/mix-manifest.json
+static/_assets
