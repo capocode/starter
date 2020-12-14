@@ -1,29 +1,31 @@
 {
     "private": true,
     "scripts": {
-        "dev": "npm run development",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "npm run development -- --watch",
-        "watch-poll": "npm run watch -- --watch-poll",
-        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "build": "cross-env composer run build && npm run production"
+        "dev": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "mix --production",
+        "build": "composer run build && npm run production"
     },
     "devDependencies": {
+        "@vue/compiler-sfc": "^3.0.4",
         "axios": "^0.19",
         "browser-sync": "^2.26.13",
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^7.0",
-        "laravel-mix": "^5.0.9",
+        "dotenv": "^6.2.0",
+        "laravel-mix": "^6.0.0-beta.17",
         "laravel-mix-versionhash": "^1.1.7",
         "lodash": "^4.17.19",
+        "postcss": "^8.2.1",
         "postcss-import": "^12.0.1",
         "resolve-url-loader": "^3.1.0",
-        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-        "vue-template-compiler": "^2.6.12"
+        "vue": "^3.0.4",
+        "vue-loader": "^16.1.1"
     },
     "dependencies": {
-        "vue": "^3.0.4"
+        "autoprefixer": "^10.1.0",
+        "tailwindcss": "^2.0.2"
     }
 }

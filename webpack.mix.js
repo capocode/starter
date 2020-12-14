@@ -1,4 +1,7 @@
 const mix = require("laravel-mix");
+require("dotenv").config({
+  path: `.env`,
+});
 
 /*
  |--------------------------------------------------------------------------
@@ -11,12 +14,10 @@ const mix = require("laravel-mix");
  |
  */
 
-mix
-  .setPublicPath('public')
-  .postCss(
-    "src/resources/css/app.css",
-    "public/css",
-    require("./postcss.config").plugins
-  )
-  .js('src/resources/js/app.js', 'public/js')
-  .version()
+mix.setPublicPath("static/_assets");
+mix.postCss("./src/styles/app.css", "").version();
+mix.js("./src/js/app.js", "").vue().version();
+mix.browserSync({
+  proxy: process.env.APP_URL,
+  files: ["src/**/*"],
+});
