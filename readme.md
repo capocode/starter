@@ -1,11 +1,13 @@
-# Phatsby Starter
+# Capo Starter
 
-This is under heavy construction and might change at any time. Heavily inspired by Gatsby and Next.
+This is under heavy construction and might change at any time.
+
+Site can be run via server or generated to static site.
 
 ## Getting Started
 
 ```bash
-composer create-project antlur/phatsby-starter -s dev
+composer create-project antlur/capo-starter -s dev
 
 npm i
 
@@ -19,5 +21,3 @@ composer run build
 
 Routes will be generated based on the structure of your `blade.php` in the `pages` directory.
 
-## Assumptions
-- Laravel Valet
