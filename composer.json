@@ -1,7 +1,7 @@
 {
   "name": "antlur/capo-starter",
   "require": {
-    "antlur/capo": "~0.0.7"
+    "antlur/capo": "~0.0.8"
   },
   "scripts": {
     "dev": "php -S localhost:8000 -t public",
