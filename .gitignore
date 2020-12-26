@@ -10,6 +10,7 @@ dist
 .idea
 node_modules
 .env
+.dev
 
 # Assets
 public/css/app.css
