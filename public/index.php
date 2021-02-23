@@ -31,8 +31,6 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $app = require_once __DIR__ . '/../vendor/antlur/capo/bootstrap/app.php';
 
-$app->useEnvironmentPath(realpath('../'));
-
 $kernel = $app->make(Kernel::class);
 
 $response = tap($kernel->handle(
