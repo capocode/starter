@@ -1,0 +1,7 @@
+[build]
+  publish = "dist/"
+    
+  command = "npm run prod && composer run build"
+
+[build.environment]
+  PHP_VERSION = "8.0"
