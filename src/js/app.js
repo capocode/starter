@@ -1,5 +1,10 @@
-import { createApp } from 'vue'
-import App from './components/App.vue'
+import React from 'react'
+import { render } from 'react-dom'
+import { createInertiaApp } from '@inertiajs/inertia-react'
 
-createApp(App).mount(document.getElementById('vueapp'))
-
+createInertiaApp({
+  resolve: name => import(`./pages/${name}`),
+  setup({ el, App, props }) {
+    render(<App {...props} />, el)
+  },
+})
