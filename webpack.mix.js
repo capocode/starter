@@ -1,4 +1,5 @@
 const mix = require("laravel-mix");
+const path = require("path");
 require("dotenv").config({
   path: `.env`,
 });
@@ -14,9 +15,22 @@ require("dotenv").config({
  |
  */
 
+mix.webpackConfig((webpack) => {
+  return {
+    resolve: {
+      alias: {
+        "@": path.resolve("./src/js"),
+      },
+    },
+    output: {
+      chunkFilename: "_assets/js/[name].[chunkhash].js",
+    },
+  };
+});
+
 mix.setPublicPath("public");
 mix.postCss("./src/styles/app.css", "_assets").version();
-mix.js("./src/js/app.js", "_assets").vue().version();
+mix.js("./src/js/app.js", "_assets").react().version();
 mix.browserSync({
   proxy: process.env.APP_URL,
   files: ["src/**/*"],
