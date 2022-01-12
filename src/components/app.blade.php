@@ -9,12 +9,17 @@
     @show
     <link rel="stylesheet" href="{{ mix('/_assets/app.css') }}">
     <script src="{{ mix('/_assets/app.js')}}" defer></script>
-    @inertiaHead
+    @if (isset($page))
+        @inertiaHead
+    @endif
 </head>
 <body>
     @if (isset($slot))
         {{ $slot }}
     @endif
-    @inertia
+
+    @if (isset($page))
+        @inertia
+    @endif
 </body>
 </html>
