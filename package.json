@@ -12,6 +12,7 @@
         "@babel/preset-react": "^7.16.7",
         "@inertiajs/inertia": "^0.11.0",
         "@inertiajs/inertia-vue3": "^0.6.0",
+        "@inertiajs/server": "^0.1.0",
         "@vue/compiler-sfc": "^3.0.4",
         "axios": "^0.19",
         "browser-sync": "^2.26.13",
@@ -31,6 +32,7 @@
     "dependencies": {
         "@inertiajs/inertia-react": "^0.8.0",
         "autoprefixer": "^10.1.0",
-        "tailwindcss": "^2.0.2"
+        "tailwindcss": "^2.0.2",
+        "webpack-node-externals": "^3.0.0"
     }
 }

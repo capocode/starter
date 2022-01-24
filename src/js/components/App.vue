@@ -2,6 +2,7 @@
   <div> I am a Vue component and I have been clicked {{ times }} </div>
   <div class="mt-4">
     <button @click="times++">Click me</button>
+    <slot />
   </div>
 </template>
 
