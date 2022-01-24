@@ -6,7 +6,8 @@
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "mix --production",
-        "build": "composer run build && npm run production"
+        "build": "composer run build && npm run production",
+        "inertia-ssr": "node public/_assets/ssr.js"
     },
     "devDependencies": {
         "@babel/preset-react": "^7.16.7",
