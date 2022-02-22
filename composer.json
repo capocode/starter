@@ -5,12 +5,12 @@
   },
   "scripts": {
     "dev": "php -S localhost:8000 -t public",
-    "build": "./vendor/bin/phatsby build",
+    "build": "./vendor/bin/capo build",
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
     "post-create-project-cmd": [
-      "@php vendor/bin/phatsby key:generate --ansi"
+      "@php vendor/bin/capo key:generate --ansi"
     ]
   },
   "minimum-stability": "dev",
