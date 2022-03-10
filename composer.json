@@ -1,22 +1,24 @@
 {
   "name": "antlur/capo-starter",
-  "repositories": [
-    {
-      "type": "path",
-      "url": "/Users/ho/code/capo/",
-      "options": {
-        "symlink": true
-      }
-    }
-  ],
   "require": {
-    "antlur/capo": "@dev"
+    "antlur/capo": "^0.3"
   },
   "scripts": {
     "dev": "php -S localhost:8000 -t public",
     "build": "./vendor/bin/capo build",
-    "post-root-package-install": ["@php -r \"file_exists('.env') || copy('.env.example', '.env');\""],
-    "post-create-project-cmd": ["@php vendor/bin/capo key:generate --ansi"]
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi"
+    ],
+    "post-update-cmd": [
+      "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+    ],
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php vendor/bin/capo key:generate --ansi"
+    ]
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
