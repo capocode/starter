@@ -1,7 +1,6 @@
 module.exports = {
   purge: [
-    "./src/components/**/*.php",
-    "./src/pages/**/*.php",
+    "./src/**/*.{php,js,jsx,ts,tsx}",
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
