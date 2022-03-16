@@ -15,6 +15,7 @@
         "@inertiajs/inertia-vue3": "^0.6.0",
         "@inertiajs/server": "^0.1.0",
         "@vue/compiler-sfc": "^3.0.4",
+        "autoprefixer": "^10.4.3",
         "axios": "^0.19",
         "browser-sync": "^2.26.13",
         "browser-sync-webpack-plugin": "^2.0.1",
@@ -23,17 +24,16 @@
         "laravel-mix": "^6.0.39",
         "laravel-mix-versionhash": "^1.1.7",
         "lodash": "^4.17.19",
-        "postcss": "^8.2.1",
+        "postcss": "^8.4.11",
         "postcss-import": "^12.0.1",
         "react-dom": "^17.0.2",
         "resolve-url-loader": "^4.0.0",
+        "tailwindcss": "^3.0.23",
         "vue": "^3.0.4",
         "vue-loader": "^16.1.1"
     },
     "dependencies": {
         "@inertiajs/inertia-react": "^0.8.0",
-        "autoprefixer": "^10.1.0",
-        "tailwindcss": "^2.0.2",
         "webpack-node-externals": "^3.0.0"
     }
 }
