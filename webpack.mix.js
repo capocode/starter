@@ -30,7 +30,7 @@ mix.webpackConfig((webpack) => {
 
 mix.setPublicPath("public");
 mix.postCss("./src/styles/app.css", "_assets").version();
-mix.js("./src/js/app.js", "_assets").react().version();
+mix.ts("./src/js/app.tsx", "_assets").react().version();
 mix.browserSync({
   proxy: process.env.APP_URL,
   files: ["src/**/*"],
