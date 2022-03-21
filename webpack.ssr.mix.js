@@ -32,7 +32,7 @@ mix.webpackConfig((webpack) => {
 mix
   .setPublicPath("public")
   .options({ manifest: false })
-  .ts("./src/js/ssr.js", "_assets")
+  .ts("./src/js/ssr.tsx", "_assets")
   .react()
   .webpackConfig({
     target: "node",
