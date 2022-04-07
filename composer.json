@@ -1,21 +1,14 @@
 {
-  "name": "antlur/capo-starter",
+  "name": "capocode/inertia-react-starter",
   "require": {
-    "antlur/capo": "^0.3"
+    "capocode/framework": "^0.4.1",
+    "inertiajs/inertia-laravel": "^0.5.4"
   },
   "scripts": {
     "dev": "php -S localhost:8000 -t public",
     "build": "./vendor/bin/capo build",
-    "post-autoload-dump": [
-      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-      "@php vendor/bin/capo package:discover --ansi"
-    ],
-    "post-root-package-install": [
-      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-    ],
-    "post-create-project-cmd": [
-      "@php vendor/bin/capo key:generate --ansi"
-    ]
+    "post-root-package-install": ["@php -r \"file_exists('.env') || copy('.env.example', '.env');\""],
+    "post-create-project-cmd": ["@php vendor/bin/capo key:generate --ansi"]
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
