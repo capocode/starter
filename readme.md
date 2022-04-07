@@ -7,7 +7,7 @@ Site can be run via server or generated to static site.
 ## Getting Started
 
 ```bash
-composer create-project capocode/starter -s dev
+composer create-project capocode/starter [name]
 
 npm i
 
