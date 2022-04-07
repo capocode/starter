@@ -7,7 +7,7 @@ Site can be run via server or generated to static site.
 ## Getting Started
 
 ```bash
-composer create-project antlur/capo-starter -s dev
+composer create-project capocode/starter -s dev
 
 npm i
 
@@ -21,3 +21,4 @@ composer run build
 
 Routes will be generated based on the structure of your `blade.php` in the `pages` directory.
 
+You can also use routes and controllers like a regular Laravel app
