@@ -15,9 +15,9 @@ require("dotenv").config({
  */
 
 mix.setPublicPath("public");
-mix.postCss("./src/styles/app.css", "_assets").version();
-mix.js("./src/js/app.js", "_assets").vue().version();
+mix.postCss("./resources/styles/app.css", "_assets").version();
+mix.js("./resources/js/app.js", "_assets").vue().version();
 mix.browserSync({
   proxy: process.env.APP_URL,
-  files: ["src/**/*"],
+  files: ["resources/**/*"],
 });
