@@ -5,17 +5,17 @@
   },
   "scripts": {
     "dev": "php -S localhost:8000 -t public",
-    "build": "php artisan build",
+    "build": "./vendor/bin/artisan build",
     "post-autoload-dump": [
       "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-      "@php artisan package:discover --ansi"
+      "./vendor/bin/artisan package:discover --ansi"
     ],
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
     "post-create-project-cmd": [
       "@php -r \"file_exists('artisan') || symlink('./vendor/bin/artisan', 'artisan');\"",
-      "@php artisan key:generate --ansi"
+      "./vendor/bin/artisan key:generate --ansi"
     ]
   },
   "minimum-stability": "dev",
