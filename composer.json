@@ -5,7 +5,7 @@
   },
   "scripts": {
     "dev": "php -S localhost:8000 -t public",
-    "build": "./vendor/bin/capo build",
+    "build": "./vendor/bin/artisan build",
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
