@@ -7,8 +7,7 @@
         <title></title>
         <meta name="description" content="">
     @show
-    <link rel="stylesheet" href="{{ mix('/_assets/app.css') }}">
-    <script src="{{ mix('/_assets/app.js')}}" defer></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     {{ $slot }}
