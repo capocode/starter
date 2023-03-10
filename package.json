@@ -1,12 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "dev": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "mix --production",
-        "build": "composer run build && npm run production"
+        "dev": "vite",
+        "build": "vite build"
     },
     "devDependencies": {
         "@vue/compiler-sfc": "^3.0.4",

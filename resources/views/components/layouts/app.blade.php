@@ -10,6 +10,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
+    {{-- {{ config('app.name') }} --}}
     {{ $slot }}
 </body>
 </html>
