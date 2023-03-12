@@ -4,4 +4,4 @@
   command = "npm run prod && composer run build"
 
 [build.environment]
-  PHP_VERSION = "8.0"
+  PHP_VERSION = "8.1"
