@@ -1,8 +1,10 @@
 # Capo Starter
 
-This is under heavy construction and might change at any time.
+**_Under heavy construction and might change at any time._**
 
-Site can be run via server or generated to static site.
+Capo has the goal of making it easy to build websites with the power of Laravel but the simplicity of modern Javascript frameworks like Next.js or Nuxt.js.
+
+Capo can be run as a standard server based application or as a static site generator.
 
 ## Getting Started
 
@@ -13,7 +15,6 @@ npm i
 
 npm run dev
 
-// to build the site
 composer run build
 ```
 
