@@ -22,3 +22,6 @@ artisan
 
 public/build
 public/hot
+
+# Local Netlify folder
+.netlify
