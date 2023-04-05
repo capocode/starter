@@ -29,25 +29,29 @@ resources/views/pages
 │   └── index.blade.php
 ```
 
-You can also use routes and controllers like a regular Laravel app
+You can also use routes and controllers like a regular Laravel app. When generating the static site, you can use the ExportPaths attribute to define which routes should be generated.
 
 ```php
+// routes/web.php
+Route::get('/blog/{post}', [BlogController::class, 'show']);
+
+// app/Http/Controllers/BlogController.php
 use Capo\Attributes\ExportPaths;
 
-class SomeController
+class BlogController
 {
-    #[ExportPaths(SomeClassWithPathsMethod::class)]
+    #[ExportPaths(BlogPostPaths::class)]
     public function show(string $name)
     {}
 }
 
-class SomeClassWithPathsMethod
+class BlogPostPaths implements \Capo\Services\Export\Interfaces\ExportPaths
 {
     public function paths(): array
     {
         return [
-            'path1',
-            'path2',
+            '/blog/first-post',
+            '/blog/second-post',
         ];
     }
 }
