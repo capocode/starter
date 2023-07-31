@@ -1,1 +1,1 @@
-I'm a mother fuckin' component!
+I'm a blade component!
