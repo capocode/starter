@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2db122151899af29f9417d5b76923ae6",
+    "content-hash": "474c8b0e59a33fe499c04a5c728cba22",
     "packages": [
         {
             "name": "brick/math",
@@ -63,16 +63,16 @@
         },
         {
             "name": "capocode/framework",
-            "version": "v0.9",
+            "version": "v0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/capocode/framework.git",
-                "reference": "0494ebb1f331703a16e5a55550971d27d01b666e"
+                "reference": "8240259edb47c92aec6ae1282c1e1054630bee64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/capocode/framework/zipball/0494ebb1f331703a16e5a55550971d27d01b666e",
-                "reference": "0494ebb1f331703a16e5a55550971d27d01b666e",
+                "url": "https://api.github.com/repos/capocode/framework/zipball/8240259edb47c92aec6ae1282c1e1054630bee64",
+                "reference": "8240259edb47c92aec6ae1282c1e1054630bee64",
                 "shasum": ""
             },
             "require": {
@@ -119,9 +119,9 @@
             ],
             "support": {
                 "issues": "https://github.com/capocode/framework/issues",
-                "source": "https://github.com/capocode/framework/tree/v0.9"
+                "source": "https://github.com/capocode/framework/tree/v0.9.1"
             },
-            "time": "2023-07-28T09:00:49+00:00"
+            "time": "2023-07-31T07:17:43+00:00"
         },
         {
             "name": "dflydev/dot-access-data",

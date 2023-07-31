@@ -1,7 +1,7 @@
 {
   "name": "capocode/starter",
   "require": {
-    "capocode/framework": "^0.9"
+    "capocode/framework": "^0.9.1"
   },
   "scripts": {
     "dev": "php -S localhost:8000 -t public",
