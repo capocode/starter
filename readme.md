@@ -33,8 +33,6 @@ Routing can be done in two ways:
 │   └── index.blade.php
 ```
 
-````
-
 ## Dynamic Data during static site generation
 
 When generating the static site, you can use the ExportPaths attribute to define which routes should be generated. This is useful when you have dynamic data that you want to generate static pages for. For example, if you have a blog and you want to generate static pages for each blog post, you can use the ExportPaths attribute to define which routes should be generated. The rest of your logic can be handled as if it was a normal Laravel application.
@@ -63,4 +61,4 @@ class BlogPostPaths implements \Capo\Services\Export\Interfaces\ExportPaths
         ];
     }
 }
-````
+```
